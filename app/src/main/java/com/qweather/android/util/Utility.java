@@ -2,9 +2,11 @@ package com.qweather.android.util;
 
 import android.text.TextUtils;
 
+import com.google.gson.Gson;
 import com.qweather.android.db.City;
 import com.qweather.android.db.County;
 import com.qweather.android.db.Province;
+import com.qweather.android.gson.ForecastWeather;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -75,5 +77,17 @@ public class Utility {
             }
         }
         return false;
+    }
+
+    public static ForecastWeather handleForecastWeatherResponse(String response) {
+        try {
+            JSONObject jsonObject = new JSONObject(response);
+            JSONArray jsonArray = jsonObject.optJSONArray("HeWeather6");
+            String weatherContent = jsonArray.getJSONObject(0).toString();
+            return new Gson().fromJson(weatherContent, ForecastWeather.class);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
     }
 }
