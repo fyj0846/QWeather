@@ -134,7 +134,7 @@ public class WeatherActivity extends AppCompatActivity {
         titleUpdateTimeText.setText(updateTime);
         nowTemperatureText.setText(temperature + "℃");
         nowInfoText.setText(now_info);
-        forecastHourLayout.removeAllViews();
+//        forecastHourLayout.removeAllViews();
 //        for(ForecastHour fhour : weather.forecastHourList) {
 //            View view = LayoutInflater.from(this).inflate(R.layout.forecast_item_h, forecastHourLayout, false);
 //            TextView timeText = view.findViewById(R.id.forecast_h_time_text);
