@@ -16,56 +16,56 @@
         android:textSize="20sp"/>
 
     <TextView
-        android:id="@+id/comfort_text"
+        android:id="@+id/lifestyle_comfort_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:textColor="#fff" />
 
     <TextView
-        android:id="@+id/car_wash_text"
+        android:id="@+id/lifestyle_car_wash_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:textColor="#fff" />
 
     <TextView
-        android:id="@+id/drsg_text"
+        android:id="@+id/lifestyle_drsg_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:textColor="#fff" />
 
     <TextView
-        android:id="@+id/flu_text"
+        android:id="@+id/lifestyle_flu_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:textColor="#fff" />
 
     <TextView
-        android:id="@+id/sport_text"
+        android:id="@+id/lifestyle_sport_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:textColor="#fff" />
 
     <TextView
-        android:id="@+id/trav_text"
+        android:id="@+id/lifestyle_trav_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:textColor="#fff" />
 
-    <TextView
-        android:id="@+id/uv_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:textColor="#fff" />
+    <!--<TextView-->
+        <!--android:id="@+id/lifestyle_uv_text"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:textColor="#fff" />-->
 
     <TextView
-        android:id="@+id/air_text"
+        android:id="@+id/lifestyle_air_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"

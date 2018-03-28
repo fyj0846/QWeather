@@ -21,8 +21,9 @@
 
             <include layout="@layout/title"></include>
             <include layout="@layout/now"></include>
+            <!--<include layout="@layout/forecast_h"></include>-->
             <include layout="@layout/forecast_d"></include>
-            <include layout="@layout/aqi"></include>
+            <!--<include layout="@layout/aqi"></include>-->
             <include layout="@layout/lifestyle"></include>
         </LinearLayout>
     </ScrollView>

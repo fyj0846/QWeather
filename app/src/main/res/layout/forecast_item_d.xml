@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="15dp">
 
     <TextView
-        android:id="@+id/date_text"
+        android:id="@+id/forecast_d_date_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -13,7 +14,7 @@
         android:textColor="#fff"/>
 
     <TextView
-        android:id="@+id/info_text"
+        android:id="@+id/forecast_d_info_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -22,7 +23,7 @@
         android:textColor="#fff"/>
 
     <TextView
-        android:id="@+id/max_text"
+        android:id="@+id/forecast_d_max_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -31,7 +32,7 @@
         android:textColor="#fff"/>
 
     <TextView
-        android:id="@+id/min_text"
+        android:id="@+id/forecast_d_min_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"

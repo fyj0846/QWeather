@@ -1,12 +1,13 @@
 package com.qweather.android.util;
 
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.google.gson.Gson;
 import com.qweather.android.db.City;
 import com.qweather.android.db.County;
 import com.qweather.android.db.Province;
-import com.qweather.android.gson.ForecastWeather;
+import com.qweather.android.gson.Weather;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -17,6 +18,7 @@ import org.json.JSONObject;
  */
 
 public class Utility {
+    private static final String TAG = "Utility";
     public static boolean handleProvinceResponsse (String response) {
         if(!TextUtils.isEmpty(response)) {
             try {
@@ -79,12 +81,13 @@ public class Utility {
         return false;
     }
 
-    public static ForecastWeather handleForecastWeatherResponse(String response) {
+    public static Weather handleWeatherResponse(String response) {
         try {
             JSONObject jsonObject = new JSONObject(response);
-            JSONArray jsonArray = jsonObject.optJSONArray("HeWeather6");
+            JSONArray jsonArray = jsonObject.getJSONArray("HeWeather6");
             String weatherContent = jsonArray.getJSONObject(0).toString();
-            return new Gson().fromJson(weatherContent, ForecastWeather.class);
+            Log.d(TAG, "handleWeatherResponse: " +  weatherContent);
+            return new Gson().fromJson(weatherContent, Weather.class);
         } catch (Exception e) {
             e.printStackTrace();
         }

@@ -15,7 +15,7 @@
         android:textSize="20sp"/>
 
     <LinearLayout
-        android:id="@+id/forcast_d_layout"
+        android:id="@+id/forecast_d_layout"
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

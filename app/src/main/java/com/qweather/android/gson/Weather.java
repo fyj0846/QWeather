@@ -8,7 +8,7 @@ import java.util.List;
  * Created by qiujian on 3/27/18.
  */
 
-public class ForecastWeather {
+public class Weather {
     public String status;
 
     public Basic basic;
@@ -23,5 +23,8 @@ public class ForecastWeather {
     public List<Lifestyle> lifestyleList;
 
     @SerializedName("daily_forecast")
-    public List<Forecast> forecastList;
+    public List<ForecastDay> forecastDayList;
+
+    @SerializedName("hourly")
+    public List<ForecastHour> forecastHourList;
 }

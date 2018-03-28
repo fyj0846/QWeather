@@ -5,7 +5,7 @@
     android:layout_margin="15dp">
 
     <TextView
-        android:id="@+id/time_text"
+        android:id="@+id/forecast_h_time_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
@@ -13,7 +13,7 @@
         android:textColor="#fff"/>
 
     <TextView
-        android:id="@+id/info_text"
+        android:id="@+id/forecast_h_info_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
@@ -22,7 +22,7 @@
         android:textColor="#fff"/>
 
     <TextView
-        android:id="@+id/temperature_text"
+        android:id="@+id/forecast_h_temperature_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -30,13 +30,13 @@
         android:gravity="right"
         android:textColor="#fff"/>
 
-    <TextView
-        android:id="@+id/wind_text"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:gravity="right"
-        android:textColor="#fff"/>
+    <!--<TextView-->
+        <!--android:id="@+id/forecast_h_wind_text"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="right"-->
+        <!--android:textColor="#fff"/>-->
 
 </LinearLayout>
